@@ -1,0 +1,14 @@
+.font-face(@file-name, @font-family, @font-weight: 400, @font-style: normal) {
+    @font-face {
+        font-family: "@{font-family}";
+        src: url("/fonts/@{file-name}.woff") format('woff');
+        font-weight: @font-weight;
+        font-style: @font-style;
+        font-display: swap;
+    }
+}
+
+.font-face(notosans-400, NotoSans, 300);
+.font-face(notosans-400, NotoSans, 400);
+.font-face(notosans-700, NotoSans, 500);
+.font-face(notosans-700, NotoSans, 700);

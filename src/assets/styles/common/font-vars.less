@@ -1,0 +1,103 @@
+@font-family: NotoSans, sans-serif;
+@font-small-size: 12px;
+@font-normal-size: 14px;
+@font-medium-size: 16px;
+@font-big-size: 18px;
+@font-large-size: 20px;
+
+
+
+/*base*/
+.font-base() {
+    font-family: var(--font-base-font-family, @font-family);
+    font-weight: var(--font-base-font-weight, 400);
+    font-style: normal;
+    font-size: var(--font-base-font-size, @font-normal-size);
+}
+/*****/
+
+
+
+/*font-light*/
+.font-light() {
+    @include font-base;
+    font-weight: var(--font-light-font-weight, 300);
+}
+
+.font-light-small() {
+    @include font-light;
+    font-size: var(--font-light-small-font-size, @font-small-size);
+}
+
+.font-light-medium() {
+    @include font-light;
+    font-size: var(--font-light-medium-font-size, @font-medium-size);
+}
+
+.font-light-big() {
+    @include font-light;
+    font-size: var(--font-light-big-font-size, @font-big-size);
+}
+
+.font-light-large() {
+    @include font-light;
+    font-size: var(--font-light-large-font-size, @font-large-size);
+}
+/**********/
+
+
+
+/*font-regular*/
+.font-regular() {
+    @include font-base;
+}
+
+.font-regular-small() {
+    @include font-regular;
+    font-size: var(--font-regular-small-font-size, @font-small-size);
+}
+
+.font-regular-medium() {
+    @include font-regular;
+    font-size: var(--font-regular-medium-font-size, @font-medium-size);
+}
+
+.font-regular-big() {
+    @include font-regular;
+    font-size: var(--font-regular-big-font-size, @font-big-size);
+}
+
+.font-regular-large() {
+    @include font-regular;
+    font-size: var(--font-regular-large-font-size, @font-large-size);
+}
+/**********/
+
+
+
+/*font-bold*/
+.font-bold() {
+    @include font-base;
+    font-weight: var(--font-bold-font-weight, 700);
+}
+
+.font-bold-small() {
+    @include font-bold;
+    font-size: var(--font-bold-small-font-size, @font-small-size);
+}
+
+.font-bold-medium() {
+    @include font-bold;
+    font-size: var(--font-bold-medium-font-size, @font-medium-size);
+}
+
+.font-bold-big() {
+    @include font-bold;
+    font-size: var(--font-bold-big-font-size, @font-big-size);
+}
+
+.font-bold-large() {
+    @include font-bold;
+    font-size: var(--font-bold-large-font-size, @font-large-size);
+}
+/**********/

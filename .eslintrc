@@ -1,0 +1,25 @@
+{
+  "extends": ["react-app"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./",
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  // add new rules here
+  "rules": {
+  },
+  // override "react-app" rules
+  "overrides": [
+    {
+      "files": ["**/*.(j|t)s?(x)"],
+      "rules": {
+        "array-callback-return": "off"
+      }
+    }
+  ]
+}
